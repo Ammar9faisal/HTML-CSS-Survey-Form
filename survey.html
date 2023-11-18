@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ammar's Survey Form</title>
+</head>
+<body>
+    <h1>Ammar's Survey</h1>
+    <div class="zoom-wrapper">
+        <img src="pic.jpeg" alt="Beautiful nature">
+    </div>
+    <p>Please fill out this form with the required information</p>
+    
+    <form>
+        <fieldset>
+            <label for="full-name">Enter Your Full Name: <input type="text" id="full-name" required></label>     
+            <label for="email">Enter Your Email: <input type="email" id="email" required></label>  
+            <label for="phone">Enter Your Number: <input type="number" id="phone" required></label> 
+        </fieldset>
+        <fieldset>
+            <legend>Gender (required)</legend>
+            <label for="Male"><input type="radio" class="inline" name="gender" id="Male" required>Male</label>
+            <label for="Female"><input type="radio" class="inline" name="gender" id="Female" required>Female</label>
+        </fieldset>
+        <fieldset>
+            <label for="referral">How did you hear about me? (optional)</label>
+            <select name="referral" id="referral" required >
+                <option value="" hidden >-- select an option --</option>
+                <option value="google">Google Search</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="instagram">Instagram</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+
+        <input type="submit">
+    </form>
+</body>
+</html>
